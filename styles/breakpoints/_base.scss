@@ -253,13 +253,11 @@ body {
     width: 1px;
     height: 40px;
     margin: 0 auto;
-    background: linear-gradient(
-      180deg,
-      #fff 0%,
-      #fff 50%,
-      #548ac7 50%,
-      #548ac7 100%
-    );
+    background: linear-gradient(180deg,
+        #fff 0%,
+        #fff 50%,
+        #548ac7 50%,
+        #548ac7 100%);
     z-index: 4000;
   }
 }
@@ -312,13 +310,11 @@ body {
       width: 1px;
       height: 40px;
       margin: 0 auto;
-      background: linear-gradient(
-        180deg,
-        #fff 0%,
-        #fff 50%,
-        #548ac7 50%,
-        #548ac7 100%
-      );
+      background: linear-gradient(180deg,
+          #fff 0%,
+          #fff 50%,
+          #548ac7 50%,
+          #548ac7 100%);
       z-index: 4000;
     }
 
@@ -953,6 +949,7 @@ body {
       display: inline-block;
       padding-bottom: 5px;
       border-bottom: 1px solid rgb(114, 114, 114);
+
       & span {
         color: $cBlack;
       }
