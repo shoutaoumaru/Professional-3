@@ -1,0 +1,411 @@
+//.header
+.p-header {
+  width: 100%;
+
+  & .logo__img {
+    display: inline-block;
+    margin: 9px 10px 0 10px;
+  }
+
+  & .logo {
+    background-image: url(/images/common/riv_logo_02.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 48px;
+    width: 90px;
+    opacity: 1;
+
+    &.inview {
+      background-image: url(/images/common/riv_logo_02.png);
+    }
+  }
+
+  .mobile-button {
+    position: fixed;
+    top: 16px;
+    right: 10px;
+    z-index: 3000;
+  }
+
+  @media (max-width: 600px) {
+    .pc-container {
+      display: none;
+    }
+  }
+
+  & .sp-navbtn {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: $cWhite;
+    opacity: 0.7;
+    height: 10vh;
+    width: 100%;
+    z-index: 2000;
+    transition: all.3s;
+
+    &__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 77vw;
+      margin: auto;
+
+      & a {
+        position: relative;
+        color: $cBlack;
+        font-size: 16px;
+        letter-spacing: 1px;
+        display: block;
+        padding-right: 20px;
+      }
+
+      & .tel {
+        letter-spacing: 2px;
+      }
+
+      & a:hover,
+      a:active {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  & .hide {
+    &.sp-navbtn {
+      visibility: hidden;
+      transform: translateY(50px);
+      transition: all 0.4s;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .pc-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 4000;
+    width: 100%;
+    background-color: $cWhite;
+    opacity: 0.8;
+
+    & .pc-nav-list {
+      display: flex;
+    }
+
+    & .pc-nav-item {
+      font-size: 1rem;
+      padding-top: 20px;
+      padding-right: 5vw;
+
+      & a {
+        color: $cBlack;
+      }
+
+      & small {
+        color: $cBlue;
+        display: block;
+        text-align: center;
+        font-size: 10px;
+      }
+    }
+
+    & .logo__img {
+      display: inline-block;
+      margin: 15px 10px 0 20px;
+    }
+  }
+}
+
+// mobile-menu
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: rgba(240, 243, 247, 0.8);
+  width: 100%;
+  height: 100%;
+  transform: translateX(-100%);
+  transition: all 0.5s;
+
+  &__nav {
+    display: block;
+    height: 100%;
+    width: 65%;
+    background-color: #fff;
+  }
+
+  &__list {
+    width: 100%;
+    font-size: 0.9em;
+    text-align: left;
+    list-style: none;
+    padding-left: 35px;
+    padding-top: 150px;
+  }
+
+  &__item {
+    opacity: 0;
+    margin-bottom: 35px;
+
+    & a {
+      color: $cBlack !important;
+    }
+  }
+
+  .reserve-btn-wrap {
+    padding: 0 10px 0 35px;
+
+    & h4 {
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+
+    .reserve-btn {
+      border: 1px solid $cBlack;
+      display: inline-block;
+      margin-bottom: 25px;
+      width: 172px;
+
+      & a {
+        color: $cBlack;
+      }
+
+      & span {
+        position: relative;
+        display: block;
+        text-align: center;
+        padding: 10px 20px 10px 10px;
+        font-size: 12px;
+      }
+    }
+
+    .reserve-btn-net {
+      & span {
+        position: relative;
+        letter-spacing: 2px;
+
+        &::after {
+          content: "";
+          display: inline-block;
+          position: absolute;
+          top: 12px;
+          right: 5px;
+          height: 12px;
+          width: 12px;
+          background-image: url(/images/common/icon-link-1-black.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+
+    .reserve-btn-tel {
+      & span {
+        letter-spacing: 4px;
+
+        &::after {
+          content: "";
+          display: inline-block;
+          position: absolute;
+          top: 13px;
+          right: 10px;
+          height: 12px;
+          width: 12px;
+          background-image: url(/images/common/icon-tel.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 600px) {
+    .reserve-btn-wrap {
+      padding-left: 10vw;
+
+      h4 {
+        font-size: 18px;
+      }
+
+      .reserve-btn {
+        width: 240px;
+
+        & span {
+          padding: 15px 30px 15px 20px;
+          font-size: 16px;
+
+          &::after {
+            top: 16px;
+            right: 12px;
+            width: 18px;
+            height: 18px;
+          }
+        }
+      }
+    }
+
+    &__list {
+      padding-left: 10vw;
+      font-size: 1.2rem;
+    }
+
+    &__item {
+      margin-bottom: 55px;
+    }
+  }
+}
+
+// モバイルボタン
+.mobile-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  overflow: hidden;
+  height: 64px;
+  width: 100%;
+  background-color: $cWhite;
+  opacity: 0.8;
+
+  .mobile-ico {
+    position: absolute;
+    top: 34%;
+    right: 20%;
+    height: 20px;
+    width: 20px;
+    background-image: url(/images/tel-gray.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all 0.3s;
+
+    &.inview {
+      transition: all 0.3s;
+      background-image: url(/images/tel-white.png);
+    }
+
+    & a {
+      height: 100%;
+      width: 100%;
+      display: block;
+    }
+  }
+
+  .mobile-logo {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    height: 43px;
+    width: 138px;
+    background-image: url(/images/riv_logo-gray.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all 0.3s;
+
+    &.inview {
+      transition: all 0.3s;
+      background-image: url(/images/riv_logo-white.png);
+    }
+  }
+
+  .mobile-button {
+    position: fixed;
+    top: 20px;
+    right: 10px;
+    z-index: 200;
+  }
+
+  .mobile-menu__btn {
+    background-color: unset;
+    border: none;
+    outline: none !important;
+    cursor: pointer;
+    display: block;
+
+    &.inview {
+      & > span {
+        background-color: #fff;
+      }
+    }
+
+    & > span {
+      background-color: black;
+      width: 25px;
+      height: 1px;
+      display: block;
+      margin-bottom: 9px;
+      transition: transform 0.7s;
+      opacity: 1;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    @media (min-width: 600px) {
+      & span {
+        width: 35px;
+        margin-bottom: 9px;
+
+        &:nth-child(2) {
+          width: 25px;
+        }
+      }
+    }
+  }
+}
+
+// メニューオープン
+.menu-open {
+  &.mobile-menu {
+    z-index: 6000;
+    transition: all 0.5s;
+    transform: none;
+
+    & nav {
+      & li {
+        opacity: 1;
+        transition: 0.1s;
+
+        @for $i from 1 through 10 {
+          &:nth-child(#{$i}) {
+            transition-delay: $i * 0.03s;
+          }
+        }
+      }
+    }
+  }
+
+  .mobile-menu__btn {
+    & > span {
+      background-color: $cBlack !important;
+
+      &:nth-child(1) {
+        transition-delay: 70ms;
+        transform: translateY(10px) rotate(135deg);
+      }
+
+      &:nth-child(2) {
+        transition-delay: 140ms;
+        transform: scaleX(0);
+      }
+
+      &:nth-child(3) {
+        transition-delay: 140ms;
+        transform: translateY(-10px) rotate(-135deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.swiper-container {
+  overflow: visible !important;
+  height: 90vh;
+}
+
+.swiper-slide {
+  overflow: hidden;
+
+  &-active {
+
+    & img {
+      animation: zoom 6.5s forwards;
+    }
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(1.1);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,319 @@
+.p-header {
+  .mobile-container {
+    display: none;
+  }
+}
+
+//.top-view 
+.top-view {
+  margin-bottom: 0;
+
+  .swiper-container {
+    height: 60vh;
+  }
+}
+
+//.p-message
+.p-message {
+  &__desc {
+    padding-top: 40px;
+    margin-bottom: 0;
+    width: 70%;
+  }
+
+  &__img-right {
+    flex: 1;
+  }
+
+  &__img-left {
+    flex: 1;
+    order: 1;
+  }
+
+  &__img-item {
+    height: 170px;
+  }
+}
+
+//.p-feature
+.p-feature {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 32%;
+    padding: 20px;
+
+    & p {
+      font-size: 14px;
+    }
+
+    & h3 {
+      font-size: 18px;
+      line-height: 1.3;
+      text-align: center;
+    }
+  }
+}
+
+//.p-service
+.p-service {
+  .p-company {
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+
+    & .c-container {
+      margin-right: -10%;
+    }
+  }
+
+  .p-works {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding-right: 80px;
+
+    & .c-container {
+      margin-left: -10%;
+    }
+  }
+
+  .c-container {
+    position: relative;
+    padding: 30px;
+    width: 70%;
+    background-color: rgb(252, 252, 252);
+    z-index: 100;
+
+    & p {
+      line-height: 1.5;
+    }
+  }
+
+  &__img {
+    height: 450px;
+    width: 70%;
+    margin-bottom: 0;
+  }
+}
+
+//.p-news 
+.p-news {
+  &__list {
+    background-color: rgb(252, 252, 252);
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+}
+
+//.contact
+.p-contact {
+  &__slider {
+    #js-infiniteslide {
+      & img {
+        width: 40%;
+      }
+    }
+  }
+
+  &__tel {
+    text-align: center;
+  }
+}
+
+//.p-footer
+.p-footer {
+  &__logo {
+
+    & img {
+      width: 100px;
+      object-fit: contain;
+    }
+  }
+
+  &__nav {
+    width: 30%;
+    border-left: 1px solid rgb(224, 223, 223);
+
+    & ul {
+      display: block;
+    }
+
+    & li {
+      width: 100%;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__address {
+    width: 40%;
+    border-left: 1px solid rgb(224, 223, 223);
+  }
+}
+
+//* * * * * * 会社概要 * * * * * * * 
+.c-company {
+  .c-container {
+    padding: 0 10vw;
+  }
+
+  .c-policy {
+    &__img {
+      display: flex;
+      justify-content: space-between;
+
+      & img {
+        width: 48%;
+        height: 300px;
+      }
+    }
+  }
+
+  .c-about {
+    &__img {
+      display: flex;
+      justify-content: space-between;
+
+      & img {
+        width: 48%;
+        height: 300px;
+      }
+    }
+  }
+}
+
+//* * * * * * 実績紹介 * * * * * * * 
+.c-works {
+  .c-container {
+    padding: 0 10vw;
+  }
+
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+//* * * * * * 採用情報 * * * * * * * 
+.c-recruit {
+  .c-container {
+    padding: 0 5vw;
+  }
+
+  & ul {
+    display: flex;
+    justify-content: space-between;
+
+    & li {
+      width: 30%;
+      line-height: 1;
+    }
+
+    .points-title {
+      margin-bottom: 25px;
+
+      & .c-txt-lr {
+        line-height: 1.5;
+        font-size: 18px;
+      }
+    }
+
+    .points-desc {
+      & .c-txt-sm {
+        font-size: 14px;
+        line-height: 1.7;
+      }
+    }
+  }
+
+  .contents-recruit {
+    .c-table01 {
+      & tr {
+        & th {
+          vertical-align: top;
+          min-width: 200px;
+        }
+      }
+
+      & .u-view-sp {
+        display: none;
+      }
+    }
+
+  }
+}
+
+// * * * * * * * * * news-page * * * * * * 
+.c-news {
+  padding: 0;
+
+  & .c-container {
+    padding: 0 10vw;
+  }
+
+  &__title {
+    margin: 5vw 0;
+    color: $cBlue;
+
+    & .c-head01 {
+      font-size: 2.5rem;
+    }
+  }
+
+  .p-footer {
+    &__wrap {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    & .p-open-time {
+      margin: 0;
+
+      &__wrap {
+        width: 90%;
+      }
+
+      &__table {
+        & th:first-child {
+          width: 9.8vw;
+        }
+      }
+    }
+  }
+}
+
+// * * * * * * * * * news-sl-page * * * * * * 
+.c-news-sl {
+
+  &__contents {
+    padding: 10vw 0;
+  }
+
+  .p-footer {
+    &__wrap {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    & .p-open-time {
+      margin: 0;
+
+      &__wrap {
+        width: 90%;
+      }
+
+      &__table {
+        & th:first-child {
+          width: 9.8vw;
+        }
+      }
+    }
+  }
+}

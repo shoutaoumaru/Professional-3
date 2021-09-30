@@ -1,0 +1,66 @@
+.c-topview {
+  &__img {
+    height: 45vh;
+  }
+}
+
+.top-view {
+  .swiper-container {
+    height: 100vh;
+  }
+}
+
+.p-message {
+  &__img-item {
+    height: 200px;
+  }
+}
+
+.p-feature {
+  &__item {
+    padding: 40px;
+  }
+}
+
+//* * * * * * 会社概要 * * * * * * * 
+.c-company {
+  .c-container {
+    padding: 0 18vw;
+  }
+}
+
+//* * * * * * 実績紹介 * * * * * * * 
+.c-works {
+  .c-container {
+    padding: 0 18vw;
+  }
+}
+
+//* * * * * * 採用情報 * * * * * * * 
+.c-recruit {
+  .c-container {
+    padding: 0 18vw;
+  }
+
+  .recruit-message {
+    margin: 0 -5vw;
+
+    ul {
+      li {
+        .points-title {
+          margin-bottom: 30px;
+
+          & .c-txt-lr {
+            font-size: 22px;
+          }
+        }
+
+        .points-desc {
+          & .c-txt-sm {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
