@@ -8,7 +8,7 @@
   }
 
   & .logo {
-    background-image: url(/images/common/riv_logo_02.png);
+    background-image: url(../images/common/riv_logo_02.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -17,7 +17,7 @@
     opacity: 1;
 
     &.inview {
-      background-image: url(/images/common/riv_logo_02.png);
+      background-image: url(../images/common/riv_logo_02.png);
     }
   }
 
@@ -203,7 +203,7 @@
           right: 5px;
           height: 12px;
           width: 12px;
-          background-image: url(/images/common/icon-link-1-black.png);
+          background-image: url(../images/common/icon-link-1-black.png);
           background-size: contain;
           background-repeat: no-repeat;
         }
@@ -222,7 +222,7 @@
           right: 10px;
           height: 12px;
           width: 12px;
-          background-image: url(/images/common/icon-tel.png);
+          background-image: url(../images/common/icon-tel.png);
           background-size: contain;
           background-repeat: no-repeat;
         }
@@ -284,7 +284,7 @@
     right: 20%;
     height: 20px;
     width: 20px;
-    background-image: url(/images/tel-gray.png);
+    background-image: url(../images/tel-gray.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -292,7 +292,7 @@
 
     &.inview {
       transition: all 0.3s;
-      background-image: url(/images/tel-white.png);
+      background-image: url(../images/tel-white.png);
     }
 
     & a {
@@ -308,7 +308,7 @@
     left: 5%;
     height: 43px;
     width: 138px;
-    background-image: url(/images/riv_logo-gray.png);
+    background-image: url(../images/riv_logo-gray.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -316,7 +316,7 @@
 
     &.inview {
       transition: all 0.3s;
-      background-image: url(/images/riv_logo-white.png);
+      background-image: url(../images/riv_logo-white.png);
     }
   }
 

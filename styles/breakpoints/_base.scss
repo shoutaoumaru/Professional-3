@@ -32,7 +32,7 @@ body {
       display: inline-block;
       height: 20px;
       width: 40px;
-      background-image: url(/images/common/arrow-blue.png);
+      background-image: url(../images/common/arrow-blue.png);
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
@@ -131,7 +131,7 @@ body {
   position: absolute;
   top: 4px;
   right: 0;
-  background-image: url(/images/common/icon-tel.png);
+  background-image: url(../images/common/icon-tel.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -144,7 +144,7 @@ body {
   position: absolute;
   top: 4px;
   right: 0;
-  background-image: url(/images/common/icon-link-1-black.png);
+  background-image: url(../images/common/icon-link-1-black.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -158,7 +158,7 @@ body {
   &::before {
     content: "";
     display: block;
-    background-image: url(/images/common/icon-map.png);
+    background-image: url(../images/common/icon-map.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -179,7 +179,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url(/images/common/icon-insta-gr.png);
+    background-image: url(../images/common/icon-insta-gr.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -253,11 +253,13 @@ body {
     width: 1px;
     height: 40px;
     margin: 0 auto;
-    background: linear-gradient(180deg,
-        #fff 0%,
-        #fff 50%,
-        #548ac7 50%,
-        #548ac7 100%);
+    background: linear-gradient(
+      180deg,
+      #fff 0%,
+      #fff 50%,
+      #548ac7 50%,
+      #548ac7 100%
+    );
     z-index: 4000;
   }
 }
@@ -310,11 +312,13 @@ body {
       width: 1px;
       height: 40px;
       margin: 0 auto;
-      background: linear-gradient(180deg,
-          #fff 0%,
-          #fff 50%,
-          #548ac7 50%,
-          #548ac7 100%);
+      background: linear-gradient(
+        180deg,
+        #fff 0%,
+        #fff 50%,
+        #548ac7 50%,
+        #548ac7 100%
+      );
       z-index: 4000;
     }
 
@@ -388,7 +392,7 @@ body {
 //.p-feature
 .p-feature {
   position: relative;
-  background-image: url(/images/home/values.jpg);
+  background-image: url(../images/home/values.jpg);
   background-size: cover;
   background-position: center;
   padding: 50px 0;
@@ -522,7 +526,7 @@ body {
 
   &__wrap {
     padding: 30px;
-    background-image: url(/images/home/service-7.jpg);
+    background-image: url(../images/home/service-7.jpg);
     background-size: cover;
     text-align: center;
   }
@@ -858,7 +862,7 @@ body {
         content: "";
         position: absolute;
         right: 0;
-        background-image: url(/images/common/arrow.png);
+        background-image: url(../images/common/arrow.png);
         background-position: right center;
         background-repeat: no-repeat;
         background-size: 100% 100%;

@@ -1,3 +1,7 @@
+<?php
+ /* Template Name: recruit
+ */
+?>
 <!DOCTYPE html>
 <html lang="ja">
   <head>
@@ -5,10 +9,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>採用情報 | 士業テンプレート1</title>
-    <link rel="stylesheet" href="/styles/vendor/animsition.min.css" />
-    <link rel="stylesheet" href="/styles/vendor/bootstrap-reboot.css" />
-    <link rel="stylesheet" href="/styles/vendor/swiper.min.css" />
-    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/vendor/animsition.min.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/vendor/bootstrap-reboot.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/vendor/swiper.min.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/style.css" />
   </head>
 
   <body>
@@ -16,7 +20,7 @@
       <header id="header" class="p-header">
         <div class="mobile-container">
           <div class="logo__img">
-            <a class="animsition-link" href="/">
+            <a class="animsition-link" href=" <?php echo esc_url( home_url('/')); ?>">
               <div class="logo"></div>
             </a>
           </div>
@@ -31,7 +35,7 @@
         <!-- /.mobile-container -->
         <div class="pc-container">
           <div class="logo__img">
-            <a class="animsition-link" href="/">
+            <a class="animsition-link" href=" <?php echo esc_url( home_url('/')); ?>">
               <div class="logo-pc logo"></div>
             </a>
           </div>
@@ -40,24 +44,24 @@
               <li class="pc-nav-item">
                 <a
                   class="pc-nav-link animsition-link"
-                  href="/company/company.html"
+                  href=" <?php echo esc_url( home_url('/company')); ?>"
                   ><span>事務所紹介</span> <small>Company</small></a
                 >
               </li>
               <li class="pc-nav-item">
-                <a class="pc-nav-link animsition-link" href="/works/works.html"
+                <a class="pc-nav-link animsition-link" href=" <?php echo esc_url( home_url('/works')); ?>"
                   ><span>取り扱い業務</span><small>Works</small></a
                 >
               </li>
               <li class="pc-nav-item">
                 <a
                   class="pc-nav-link animsition-link"
-                  href="/recruit/recruit.html"
+                  href=" <?php echo esc_url( home_url('/recruit')); ?>"
                   ><span>採用情報</span><small>Recruit</small></a
                 >
               </li>
               <li class="pc-nav-item">
-                <a class="pc-nav-link animsition-link" href="/news/news.html"
+                <a class="pc-nav-link animsition-link" href=" <?php echo esc_url( home_url('/news')); ?>"
                   ><span>お知らせ</span><small>News</small></a
                 >
               </li>
@@ -70,7 +74,7 @@
       <main id="main-contents" class="c-recruit">
         <section class="c-topview">
           <div class="c-topview__img">
-            <img src="/images/home/recruit.jpg" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/images/home/recruit.jpg" alt="" />
           </div>
           <div class="c-topview__title">
             <h2 class="c-topview__text">
@@ -219,7 +223,7 @@
               <a href="tel:050-3786-1317">Tel:050-3786-1317</a>
             </div>
             <div class="p-contact__form">
-              <a class="link-btn" href="/contact/contact.html">
+              <a class="link-btn" href=" <?php echo esc_url( home_url('/company')); ?>">
                 <span class="c-txt-md">応募する</span></a
               >
             </div>
@@ -228,84 +232,9 @@
         <!-- /.p-contact -->
       </main>
       <!-- /#main-contents -->
-      <footer class="p-footer">
-        <div class="c-container">
-          <div class="p-footer__logo">
-            <img src="/images/common/riv_logo_02.png" alt="" />
-          </div>
-          <div class="p-footer__nav">
-            <ul>
-              <li>
-                <a href="/company/company.html"
-                  ><span class="c-txt-sm">事務所紹介</span>
-                  <span class="c-txt-xs">Company</span></a
-                >
-              </li>
-              <li>
-                <a href="/works/works.html"
-                  ><span class="c-txt-sm">取り扱い業務</span>
-                  <span class="c-txt-xs">Works</span></a
-                >
-              </li>
-              <li>
-                <a href="/recruit/recruit.html"
-                  ><span class="c-txt-sm">採用情報</span>
-                  <span class="c-txt-xs">Recruit</span></a
-                >
-              </li>
-              <li>
-                <a href="/news/news.html"
-                  ><span class="c-txt-sm">お知らせ</span>
-                  <span class="c-txt-xs">News</span></a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="p-footer__address">
-            <p class="c-txt-sm">本社</p>
-            <span class="c-txt-sm"
-              >〒812-0011 福岡県福岡市博多区3-27-25-9F</span
-            >
-          </div>
-          <div class="copyright">&copy;2021 Riv建設</div>
-        </div>
-      </footer>
+      <?php get_template_part('includes/c-footer'); ?>      
       <!-- /.footer -->
-      <div class="mobile-menu">
-        <nav class="mobile-menu__nav">
-          <ul class="mobile-menu__list">
-            <li class="mobile-menu__item">
-              <a class="animsition-link" href="/">ホーム</a>
-            </li>
-            <li class="mobile-menu__item">
-              <a class="animsition-link" href="/company/company.html"
-                >事務所紹介</a
-              >
-            </li>
-            <li class="mobile-menu__item">
-              <a class="animsition-link" href="/works/works.html"
-                >取り扱い業務</a
-              >
-            </li>
-            <li class="mobile-menu__item">
-              <a class="animsition-link" href="/news/news.html">お知らせ</a>
-            </li>
-            <li class="mobile-menu__item">
-              <a class="animsition-link" href="/recruit/recruit.html"
-                >採用情報</a
-              >
-            </li>
-          </ul>
-          <div class="reserve-btn-wrap">
-            <div class="reserve-btn-tel">
-              <h4>電話でのお問い合わせ</h4>
-              <div class="reserve-btn">
-                <a href="tel:092-686-7954"><span>092-686-7954</span></a>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </div>
+      <?php get_template_part('includes/c-header'); ?>     
       <!-- /.mobile-menu -->
     </div>
     <script
@@ -313,10 +242,10 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
-    <script src="/scripts/vendor/animsition.min.js"></script>
-    <script src="/scripts/libs/page.js"></script>
-    <script src="/scripts/libs/mobile-menu.js"></script>
-    <script src="/scripts/libs/scroll.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/scripts/vendor/animsition.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/page.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/mobile-menu.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/scroll.js"></script>
     <!-- <script src="/scripts/main.js"></script> -->
   </body>
 </html>
