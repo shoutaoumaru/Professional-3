@@ -17,17 +17,8 @@
 .p-message {
   &__desc {
     padding-top: 40px;
+    padding: 40px 8vw 40px 8vw;
     margin-bottom: 0;
-    width: 70%;
-  }
-
-  &__img-right {
-    flex: 1;
-  }
-
-  &__img-left {
-    flex: 1;
-    order: 1;
   }
 
   &__img-item {

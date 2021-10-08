@@ -335,12 +335,12 @@
     display: block;
 
     &.inview {
-      & > span {
+      &>span {
         background-color: #fff;
       }
     }
 
-    & > span {
+    &>span {
       background-color: black;
       width: 25px;
       height: 1px;
@@ -389,7 +389,7 @@
   }
 
   .mobile-menu__btn {
-    & > span {
+    &>span {
       background-color: $cBlack !important;
 
       &:nth-child(1) {

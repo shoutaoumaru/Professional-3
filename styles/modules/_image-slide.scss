@@ -3,7 +3,7 @@
   overflow: hidden;
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     z-index: 2;
     top: 0;
@@ -18,12 +18,10 @@
     &::after {
       opacity: 1;
 
-      @include animation(
-        $name: kf-cover-slide,
+      @include animation($name: kf-cover-slide,
         $duration: 1.6s,
         $timing-function: ease-in-out,
-        $fill-mode: both
-      );
+        $fill-mode: both);
     }
   }
 }
@@ -56,12 +54,10 @@
   .inview & {
     opacity: 1;
     transition: transform 0.3s ease;
-    @include animation(
-      $name: kf-img-show,
+    @include animation($name: kf-img-show,
       $duration: 1.6s,
       $timing-function: ease-in-out,
-      $fill-mode: none
-    );
+      $fill-mode: none);
 
     &:hover {
       transform: scale(1.05);
@@ -90,7 +86,7 @@
 
 .hover-darken {
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -100,12 +96,10 @@
     transition: background-color 0.3s ease;
     pointer-events: none;
 
-    @include animation(
-      $name: kf-img-show,
+    @include animation($name: kf-img-show,
       $duration: 1.6s,
       $timing-function: ease-in-out,
-      $fill-mode: none
-    );
+      $fill-mode: none);
   }
 
   &:hover::before {
@@ -114,7 +108,7 @@
 }
 
 .bg-img-zoom {
-  background-image: url(../images/image-1.jpg);
+  background-image: url(images/image-1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -127,7 +121,7 @@
 
   &::before {
     display: block;
-    content: "";
+    content: '';
     padding-top: 50%;
   }
 }

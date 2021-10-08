@@ -11,6 +11,10 @@
 }
 
 .p-message {
+  &__desc {
+    margin-bottom: 50px;
+  }
+
   &__img-item {
     height: 200px;
   }

@@ -141,17 +141,6 @@
       <!-- /.top-view -->
       <section class="p-message">
         <div class="p-message__wrap appear up">
-          <div class="p-message__img-left item">
-            <div class="p-message__img-item">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/home/service-2.jpg" alt="" />
-            </div>
-            <div class="p-message__img-item">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/home/service-3.jpg" alt="" />
-            </div>
-            <div class="p-message__img-item">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/home/service-8.jpg" alt="" />
-            </div>
-          </div>
           <div class="p-message__desc item">
             <h2 class="p-message__title">
               <p class="c-txt-lg">30年の歴史は<br />お客様との信頼の証</p>
@@ -163,15 +152,18 @@
               </p>
             </div>
           </div>
-          <div class="p-message__img-right item">
+          <div class="p-message__img-box item">
+            <div class="p-message__img-item">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/home/service-2.jpg" alt="" />
+            </div>
+            <div class="p-message__img-item">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/home/service-3.jpg" alt="" />
+            </div>
+            <div class="p-message__img-item">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/home/service-8.jpg" alt="" />
+            </div>
             <div class="p-message__img-item">
               <img src="<?php echo get_template_directory_uri(); ?>/images/home/service-4.jpg" alt="" />
-            </div>
-            <div class="p-message__img-item">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/home/service-6.jpg" alt="" />
-            </div>
-            <div class="p-message__img-item">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/home/service-7.jpg" alt="" />
             </div>
           </div>
         </div>
@@ -267,9 +259,10 @@
               「人を育て、人を活かす。」そんな環境で私たちと一緒に歩んでみませんか。<br />司法書士有資格者はもちろんのこと、未経験の方、これから資格取得を目指す方も歓迎いたします。
             </p>
           </div>
-          <div class="p-recruit__btn item">
-            <a class="link-btn" href=" <?php echo esc_url( home_url('/recruit')); ?>">
-              <span class="c-txt-md">採用情報を詳しく見る</span></a>
+          <div class="link-btn-wrap">
+            <div class="link-btn">
+              <a href="<?php echo esc_url( home_url('/recruit')); ?>" class="btn btn-flat"><span>採用情報を見る</span></a>
+            </div>
           </div>
         </div>
       </section>
@@ -292,9 +285,10 @@
             <?php endwhile; ?>
             <?php endif; ?>
           </ul>
-          <div class="p-news__btn item">
-            <a class="link-btn animsition-links" href=" <?php echo esc_url( home_url('/news')); ?>">
-              <span class="c-txt-md">お知らせ一覧</span></a>
+          <div class="link-btn-wrap">
+            <div class="link-btn">
+              <a href="<?php echo esc_url( home_url('/news')); ?>" class="btn btn-flat"><span>お知らせ一覧</span></a>
+            </div>
           </div>
         </div>
       </section>
@@ -321,9 +315,10 @@
           <div class="p-contact__tel item">
             <a href="tel:050-3786-1317">Tel:050-3786-1317</a>
           </div>
-          <div class="p-contact__form item">
-            <a class="link-btn" href=" <?php echo esc_url( home_url('/company')); ?>">
-              <span class="c-txt-md">お問い合わせフォーム</span></a>
+          <div class="link-btn-wrap">
+            <div class="link-btn">
+              <a id="contactBtn" href="<?php echo esc_url( home_url('#')); ?>" class="btn btn-flat"><span>お問い合わせフォーム</span></a>
+            </div>
           </div>
         </div>
       </section>
