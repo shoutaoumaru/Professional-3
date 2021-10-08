@@ -1214,64 +1214,6 @@ body {
   background-repeat: no-repeat;
 }
 
-.c-thanks {
-  margin-top: 100px;
-}
-
-.c-thanks .c-title {
-  text-align: center;
-  font-size: 20px;
-  display: block;
-  margin-bottom: 30px;
-  font-weight: bold;
-}
-
-.c-thanks h3 {
-  margin-bottom: 20px;
-}
-
-.c-thanks-item {
-  margin-bottom: 30px;
-}
-
-.c-thanks-btn {
-  text-align: center;
-  margin: 40px 0;
-  font-size: 18px;
-}
-
-.c-thanks-btn a {
-  position: relative;
-  border: 1px solid #302f2f;
-  padding: 10px 30px;
-  border-radius: 5px;
-  background-color: #fff;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  letter-spacing: 2px;
-}
-
-.c-thanks-btn a:hover {
-  letter-spacing: 5px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.c-thanks-btn a::after {
-  position: absolute;
-  top: 0;
-  right: 7px;
-  bottom: 0;
-  margin: auto;
-  content: '';
-  display: inline-block;
-  height: 16px;
-  width: 16px;
-  background-image: url(../images/common/arrow.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
 .swiper-container {
   overflow: visible !important;
   height: 90vh;
