@@ -1,29 +1,41 @@
-<div class="mobile-menu">
-      <nav class="mobile-menu__nav">
-        <ul class="mobile-menu__list">
-          <li class="mobile-menu__item">
-            <a class="animsition-link" href=" <?php echo esc_url( home_url('/')); ?>">ホーム</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a class="animsition-link" href=" <?php echo esc_url( home_url('/company')); ?>">事務所紹介</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a class="animsition-link" href=" <?php echo esc_url( home_url('/works')); ?>">取り扱い業務</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a class="animsition-link" href=" <?php echo esc_url( home_url('/news')); ?>">お知らせ</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a class="animsition-link" href=" <?php echo esc_url( home_url('/recruit')); ?>">採用情報</a>
-          </li>
-        </ul>
-        <div class="reserve-btn-wrap">
-          <div class="reserve-btn-tel">
-            <h4>電話でのお問い合わせ</h4>
-            <div class="reserve-btn">
-              <a href="tel:092-686-7954"><span>092-686-7954</span></a>
-            </div>
-          </div>
+    <header id="header" class="p-header">
+      <div class="mobile-container">
+        <div class="logo__img">
+          <a href=" <?php echo esc_url( home_url('')); ?>">
+            <div class="logo"></div>
+          </a>
         </div>
-      </nav>
-    </div>
+        <div class="mobile-button">
+          <button class="mobile-menu__btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+      <!-- /.mobile-container -->
+      <div class="pc-container">
+        <div class="logo__img">
+          <a class="animsition-link" href=" <?php echo esc_url( home_url('/')); ?>">
+            <div class="logo-pc logo"></div>
+          </a>
+        </div>
+        <nav class="pc-nav">
+          <ul class="pc-nav-list">
+            <li class="pc-nav-item">
+              <a class="pc-nav-link" href=" <?php echo esc_url( home_url('/company')); ?>"><span>事務所紹介</span> <small>Company</small></a>
+            </li>
+            <li class="pc-nav-item">
+              <a class="pc-nav-link" href=" <?php echo esc_url( home_url('/works')); ?>"><span>取り扱い業務</span><small>Works</small></a>
+            </li>
+            <li class="pc-nav-item">
+              <a class="pc-nav-link" href=" <?php echo esc_url( home_url('/recruit')); ?>"><span>採用情報</span><small>Recruit</small></a>
+            </li>
+            <li class="pc-nav-item">
+              <a class="pc-nav-link reserve-btn" href=" <?php echo esc_url( home_url('/news')); ?>"><span>お知らせ</span><small>News</small></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- /.pc-container -->
+    </header>
